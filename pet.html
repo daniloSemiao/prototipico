@@ -1,0 +1,176 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doar é Ajudar - Doação de Alimentos para Pets</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1a1a1a, #000066);
+        color: #e6e6e6;
+        min-height: 100vh;
+    }
+    header {
+        background-image: url('https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 1;
+    }
+    nav {
+        background-color: rgba(0, 0, 51, 0.7);
+        padding: 1rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: 0.5rem;
+    }
+    nav ul li a {
+        color: #b3d9ff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(77, 148, 255, 0.2);
+        color: #ffffff;
+    }
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .section {
+        background-color: rgba(26, 26, 26, 0.7);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 102, 0.3);
+    }
+    h2 {
+        color: #4d94ff;
+        border-bottom: 2px solid #4d94ff;
+        padding-bottom: 0.5rem;
+    }
+    p {
+        line-height: 1.6;
+    }
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(45deg, #000066, #1a53ff);
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 1rem;
+        transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+        background: linear-gradient(45deg, #1a53ff, #000066);
+        box-shadow: 0 0 15px #4d94ff;
+    }
+    .pet-food-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .pet-food-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    .pet-food-list li::before {
+        content: '🐾';
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Doação de Alimentos para Pets</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="roupa.html">Roupas</a></li>
+            <li><a href="alimento.html">Alimentos</a></li>
+            <li><a href="moradia.html">Moradia</a></li>
+            <li><a href="pet.html">Pet</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="section">
+            <h2>Por que doar alimentos para pets?</h2>
+            <p>Muitos animais de estimação em abrigos ou vivendo com famílias de baixa renda não têm acesso a uma alimentação adequada. Sua doação pode fazer a diferença na vida desses animais, garantindo que eles recebam a nutrição necessária para uma vida saudável e feliz.</p>
+        </section>
+        
+        <section class="section">
+            <h2>O que doar?</h2>
+            <p>Aqui está uma lista de alimentos que são sempre bem-vindos em nossas campanhas de doação:</p>
+            <ul class="pet-food-list">
+                <li>Ração seca para cães (filhotes e adultos)</li>
+                <li>Ração seca para gatos (filhotes e adultos)</li>
+                <li>Ração úmida (sachês ou latas) para cães e gatos</li>
+                <li>Petiscos e biscoitos para cães e gatos</li>
+                <li>Leite em pó para filhotes</li>
+                <li>Suplementos vitamínicos (com orientação veterinária)</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Como doar</h2>
+            <p>Você pode doar alimentos para pets de duas maneiras:</p>
+            <ol>
+                <li>Entregando diretamente em um de nossos pontos de coleta parceiros.</li>
+                <li>Agendando uma coleta em sua residência através do nosso site ou aplicativo.</li>
+            </ol>
+            <a href=https://institutocaramelo.org/ class="cta-button">Agendar Doação</a>
+        </section>
+        
+        <section class="section">
+            <h2>Impacto da sua doação</h2>
+            <p>Cada pacote de ração doado significa refeições garantidas para animais necessitados. No último ano, graças a doadores como você, conseguimos alimentar mais de 10.000 cães e gatos em situação de vulnerabilidade. Sua generosidade não apenas alimenta, mas também dá esperança e conforto a esses animais.</p>
+        </section>
+    </main>
+
+    <script>
+        // Adicione aqui qualquer JavaScript necessário
+    </script>
+</body>
+</html>

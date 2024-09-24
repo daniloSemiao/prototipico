@@ -1,0 +1,227 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doação de Roupas - DoeConect</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1a1a1a, #000066);
+        color: #e6e6e6;
+        min-height: 100vh;
+    }
+    header {
+        background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+        font-size: 3.5rem;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 1;
+    }
+    nav {
+        background-color: rgba(0, 0, 51, 0.7);
+        padding: 1rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    nav ul li a {
+        color: #b3d9ff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(77, 148, 255, 0.2);
+        color: #ffffff;
+    }
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .section {
+        background-color: rgba(26, 26, 26, 0.7);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 102, 0.3);
+    }
+    .section h2 {
+        color: #4d94ff;
+        border-bottom: 2px solid #4d94ff;
+        padding-bottom: 0.5rem;
+    }
+    .clothes-types {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .clothes-type {
+        background-color: rgba(51, 51, 102, 0.5);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        flex-basis: calc(33% - 1rem);
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+    .clothes-type:hover {
+        transform: scale(1.05);
+        background-color: rgba(77, 77, 153, 0.7);
+    }
+    .clothes-type h3 {
+        color: #4d94ff;
+    }
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: linear-gradient(45deg, #000066, #1a53ff);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+    .btn:hover {
+        background: linear-gradient(45deg, #1a53ff, #000066);
+        box-shadow: 0 0 15px #4d94ff;
+    }
+    @media (max-width: 768px) {
+        .clothes-type {
+            flex-basis: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Doação de Roupas</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="roupa.html">Roupas</a></li>
+            <li><a href="alimento.html">Alimentos</a></li>
+            <li><a href="moradia.html">Moradia</a></li>
+            <li><a href="pet.html">Pet</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="section">
+            <h2>Doação de Roupas: Aquecendo Corações</h2>
+            <p>Sua doação de roupas pode fazer uma grande diferença na vida de alguém. Roupas não são apenas proteção contra o frio, mas também uma forma de dignidade e autoestima. Ao doar, você está oferecendo conforto e esperança para quem mais precisa.</p>
+        </section>
+
+        <section class="section">
+            <h2>Tipos de Roupas Necessárias</h2>
+            <div class="clothes-types">
+                <div class="clothes-type">
+                    <h3><a href="https://www.exercitodoacoes.org.br/doacoes/como-posso-doar">Roupas de Inverno</a> </h3>
+                    <p>Casacos, blusas de lã, cachecóis e luvas para proteger do frio.</p>
+                </div>
+                <div class="clothes-type">
+                    <h3> <a href="https://www.exercitodoacoes.org.br/doacoes/como-posso-doar">Roupas do Dia a Dia</h3></a>
+                    <p>Camisetas, calças jeans, vestidos e roupas casuais para uso diário.</p>
+                </div>
+                <div class="clothes-type">
+                    <h3> <a href="https://www.exercitodoacoes.org.br/doacoes/como-posso-doar">Roupas Íntimas</h3></a>
+                    <p>Meias, roupas íntimas novas e pijamas para conforto pessoal.</p>
+                </div>
+                <div class="clothes-type">
+                    <h3> <a href="https://www.exercitodoacoes.org.br/doacoes/como-posso-doar">Calçados</h3></a>
+                    <p>Sapatos, tênis e chinelos em bom estado para todos os tamanhos.</p>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Como Doar</h2>
+            <ol>
+                <li>Separe as roupas que deseja doar, garantindo que estejam limpas e em bom estado.</li>
+                <li>Verifique os pontos de coleta mais próximos de você em nossa lista de parceiros.</li>
+                <li>Leve suas doações até o ponto de coleta escolhido.</li>
+                <li>Se preferir, agende uma coleta domiciliar através do nosso site ou aplicativo.</li>
+            </ol>
+            <a href="cadastro.html" class="btn" id="doarBtn">Doar Agora</a>
+        </section>
+
+        <section class="section">
+            <h2>Impacto da Sua Doação</h2>
+            <p>Cada peça de roupa doada tem o potencial de:</p>
+            <ul>
+                <li>Proteger alguém do frio nas noites de inverno</li>
+                <li>Proporcionar dignidade a uma pessoa em situação de vulnerabilidade</li>
+                <li>Ajudar alguém a se preparar para uma entrevista de emprego</li>
+                <li>Fornecer uniforme escolar para uma criança continuar seus estudos</li>
+                <li>Elevar a autoestima de quem recebe, mostrando que há pessoas que se importam</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Adiciona um efeito de fade-in aos elementos quando eles entram na viewport
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transition = 'opacity 1s, transform 1s';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .clothes-type').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            observer.observe(item);
+        });
+
+       
+    </script>
+</body>
+</html>

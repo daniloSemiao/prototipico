@@ -1,0 +1,222 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DoeConect - Doar é Ajudar</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1a1a1a, #000066);
+        color: #e6e6e6;
+        min-height: 100vh;
+    }
+    header {
+        background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 1;
+    }
+    nav {
+        background-color: rgba(0, 0, 51, 0.7);
+        padding: 1rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    nav ul li a {
+        color: #b3d9ff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(77, 148, 255, 0.2);
+        color: #ffffff;
+    }
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .form-container {
+        background-color: rgba(26, 26, 26, 0.7);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 102, 0.3);
+    }
+    form {
+        display: grid;
+        gap: 1rem;
+    }
+    label {
+        font-weight: bold;
+        color: #4d94ff;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #4d94ff;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 51, 0.3);
+        color: #ffffff;
+    }
+    input[type="submit"] {
+        background: linear-gradient(45deg, #000066, #1a53ff);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background: linear-gradient(45deg, #1a53ff, #000066);
+        box-shadow: 0 0 15px #4d94ff;
+    }
+    .success-message {
+        display: none;
+        background-color: rgba(0, 255, 0, 0.2);
+        border: 1px solid #00ff00;
+        color: #00ff00;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="roupa.html">Roupas</a></li>
+            <li><a href="alimento.html">Alimentos</a></li>
+            <li><a href="moradia.html">Moradia</a></li>
+            <li><a href="pet.html">Pet</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="form-container">
+            <form id="cadastroForm">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+                <label for="interesse">Área de interesse:</label>
+                <select id="interesse" name="interesse" required>
+                    <option value="">Selecione a área</option>
+                    <option value="roupas">Doação de Roupas</option>
+                    <option value="alimentos">Doação de Alimentos</option>
+                    <option value="moradia">Moradia Solidária</option>
+                    <option value="voluntario">Voluntariado</option>
+                </select>
+
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <input type="submit" value="Enviar Cadastro">
+            </form>
+        </div>
+        <div id="successMessage" class="success-message">
+            Cadastro realizado com sucesso! Obrigado por se juntar à nossa causa.
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simula o envio do formulário
+            setTimeout(function() {
+                document.getElementById('cadastroForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            }, 1000);
+        });
+
+        // Máscara para o campo de telefone
+        document.getElementById('telefone').addEventListener('input', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+    </script>
+</body>
+</html>

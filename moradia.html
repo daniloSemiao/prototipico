@@ -1,0 +1,234 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moradia Solidária - DoeConect</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1a1a1a, #000066);
+        color: #e6e6e6;
+        min-height: 100vh;
+    }
+    header {
+        background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+        font-size: 3.5rem;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 1;
+    }
+    nav {
+        background-color: rgba(0, 0, 51, 0.7);
+        padding: 1rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    nav ul li a {
+        color: #b3d9ff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(77, 148, 255, 0.2);
+        color: #ffffff;
+    }
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .section {
+        background-color: rgba(26, 26, 26, 0.7);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 102, 0.3);
+    }
+    .section h2 {
+        color: #4d94ff;
+        border-bottom: 2px solid #4d94ff;
+        padding-bottom: 0.5rem;
+    }
+    .housing-types {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .housing-type {
+        background-color: rgba(51, 51, 102, 0.5);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        flex-basis: calc(33% - 1rem);
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+    .housing-type:hover {
+        transform: scale(1.05);
+        background-color: rgba(77, 77, 153, 0.7);
+    }
+    .housing-type h3 {
+        color: #4d94ff;
+    }
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: linear-gradient(45deg, #000066, #1a53ff);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+    .btn:hover {
+        background: linear-gradient(45deg, #1a53ff, #000066);
+        box-shadow: 0 0 15px #4d94ff;
+    }
+    @media (max-width: 768px) {
+        .housing-type {
+            flex-basis: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Moradia Solidária</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="roupa.html">Roupas</a></li>
+            <li><a href="alimento.html">Alimentos</a></li>
+            <li><a href="moradia.html">Moradia</a></li>
+            <li><a href="pet.html">Pet</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="section">
+            <h2>Moradia Solidária: Construindo Esperança</h2>
+            <p>Ter um lar é um direito fundamental, mas infelizmente, muitos ainda não têm acesso a uma moradia digna. Através do nosso programa de Moradia Solidária, buscamos proporcionar abrigo, segurança e dignidade para aqueles que mais precisam. Sua contribuição pode fazer a diferença na vida de famílias e indivíduos em situação de vulnerabilidade.</p>
+        </section>
+
+        <section class="section">
+            <h2>Formas de Ajudar</h2>
+            <div class="housing-types">
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">de Materiais</h3></a> 
+                    <p>Doe materiais de construção, móveis ou utensílios domésticos para ajudar na construção e mobília de novas moradias.</p>
+                </div>
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">Voluntariado</h3></a>
+                    <p>Ofereça suas habilidades e tempo para ajudar na construção, reforma ou manutenção de moradias para pessoas necessitadas.</p>
+                </div>
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">xDoação Financeira</h3></a>
+                    <p>Contribua financeiramente para nossos projetos de moradia, ajudando a custear construções e reformas.</p>
+                </div>
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">Acolhimento Temporário</h3></a>
+                    <p>Ofereça abrigo temporário para pessoas em situação de rua ou vítimas de desastres naturais.</p>
+                </div>
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">Assistência Técnica</h3></a>
+                    <p>Se você é arquiteto, engenheiro ou profissional da construção, ofereça seus serviços para projetos de moradia social.</p>
+                </div>
+                <div class="housing-type">
+                    <h3><a href="https://habitatbrasil.org.br/">Advocacy</h3></a>
+                    <p>Ajude a promover políticas públicas que garantam o direito à moradia digna para todos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Como Participar</h2>
+            <ol>
+                <li>Escolha a forma de ajuda que mais se adequa às suas possibilidades.</li>
+                <li>Entre em contato conosco através do formulário abaixo ou pelo telefone.</li>
+                <li>Nossa equipe irá orientá-lo sobre os próximos passos e como sua ajuda será direcionada.</li>
+                <li>Acompanhe o impacto de sua contribuição através de nossas redes sociais e relatórios de transparência.</li>
+            </ol>
+            <a href="cadastro.html" class="btn" id="participarBtn">Quero Participar</a>
+        </section>
+
+        <section class="section">
+            <h2>Impacto do Programa</h2>
+            <p>Ao participar do programa Moradia Solidária, você está contribuindo para:</p>
+            <ul>
+                <li>Redução do déficit habitacional em comunidades carentes</li>
+                <li>Melhoria das condições de vida e saúde de famílias em situação de vulnerabilidade</li>
+                <li>Promoção da dignidade e autoestima de pessoas em situação de rua</li>
+                <li>Fortalecimento do senso de comunidade e solidariedade</li>
+                <li>Criação de oportunidades para um futuro melhor para crianças e jovens</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Adiciona um efeito de fade-in aos elementos quando eles entram na viewport
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transition = 'opacity 1s, transform 1s';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .housing-type').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            observer.observe(item);
+        });
+    
+
+    
+    </script>
+</body>
+</html>
